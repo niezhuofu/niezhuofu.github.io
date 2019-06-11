@@ -11,7 +11,7 @@
 
     <title>
         
-        NieZhuoFu的博客 | NieZhuoFu&#39;s Blog
+        混淆语法 - NieZhuoFu的博客 | NieZhuoFu&#39;s Blog
         
     </title>
 
@@ -53,7 +53,7 @@
     </div>
     <div class="contents" id="nav-content">
         <ul>
-            <li class="active">
+            <li>
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
                     <span>主页</span>
@@ -88,6 +88,10 @@
         </ul>
     </div>
     
+        <div id="toc" class="toc-article">
+    
+</div>
+    
 </div>
 
 
@@ -112,53 +116,84 @@
     <div class="index-middle">
         <!-- Main Content -->
         
-<div class="post-preview-container" style="min-height: 720px">
-    
-    <div class="post-preview">
-        <div class="post-time">2019-06-11</div>
-        <div class="post-info">
-            <a href="/2019/06/11/混淆语法/">
-                <h3>
-                    混淆语法
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#Code" title="Code">Code</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+
+<div class="post-container">
+    <div class="post-title">
+        混淆语法
     </div>
-    
-    <div class="post-preview">
-        <div class="post-time">2019-06-11</div>
-        <div class="post-info">
-            <a href="/2019/06/11/hello-world/">
-                <h3>
-                    Hello World
-                </h3>
-            </a>
-            <p>
-                
-                <span>/</span>
-                
-                <a class="tag" href="/tags/#日记" title="日记">日记</a>
-                <span>/</span>
-                
-                
-            </p>
-        </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2019-06-11 15:20:31</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#Code" title="Code">Code</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+
     </div>
-    
+    <div class="post-content ">
+        <ol>
+<li>-include {filename}    从给定的文件中读取配置参数   </li>
+<li>-basedirectory {directoryname}    指定基础目录为以后相对的档案名称   </li>
+<li>-injars {class_path}    指定要处理的应用程序jar,war,ear和目录   </li>
+<li>-outjars {class_path}    指定处理完后要输出的jar,war,ear和目录的名称   </li>
+<li>-libraryjars {classpath}    指定要处理的应用程序jar,war,ear和目录所需要的程序库文件   </li>
+<li>-dontskipnonpubliclibraryclasses    指定不去忽略非公共的库类。   </li>
+<li>-dontskipnonpubliclibraryclassmembers    指定不去忽略包可见的库类的成员。  </li>
+<li></li>
+<li>保留选项   </li>
+<li>-keep {Modifier} {class_specification}    保护指定的类文件和类的成员   </li>
+<li>-keepclassmembers {modifier} {class_specification}    保护指定类的成员，如果此类受到保护他们会保护的更好  </li>
+<li>-keepclasseswithmembers {class_specification}    保护指定的类和类的成员，但条件是所有指定的类和类成员是要存在。   </li>
+<li>-keepnames {class_specification}    保护指定的类和类的成员的名称（如果他们不会压缩步骤中删除）   </li>
+<li>-keepclassmembernames {class_specification}    保护指定的类的成员的名称（如果他们不会压缩步骤中删除）   </li>
+<li>-keepclasseswithmembernames {class_specification}    保护指定的类和类的成员的名称，如果所有指定的类成员出席（在压缩步骤之后）   </li>
+<li>-printseeds {filename}    列出类和类的成员-keep选项的清单，标准输出到给定的文件   </li>
+<li></li>
+<li>压缩   </li>
+<li>-dontshrink    不压缩输入的类文件   </li>
+<li>-printusage {filename}   </li>
+<li>-dontwarn   如果有警告也不终止  </li>
+<li>-whyareyoukeeping {class_specification}       </li>
+<li></li>
+<li>优化   </li>
+<li>-dontoptimize    不优化输入的类文件   </li>
+<li>-assumenosideeffects {class_specification}    优化时假设指定的方法，没有任何副作用   </li>
+<li>-allowaccessmodification    优化时允许访问并修改有修饰符的类和类的成员   </li>
+<li></li>
+<li>混淆   </li>
+<li>-dontobfuscate    不混淆输入的类文件   </li>
+<li>-printmapping {filename}   </li>
+<li>-applymapping {filename}    重用映射增加混淆   </li>
+<li>-obfuscationdictionary {filename}    使用给定文件中的关键字作为要混淆方法的名称   </li>
+<li>-overloadaggressively    混淆时应用侵入式重载   </li>
+<li>-useuniqueclassmembernames    确定统一的混淆类的成员名称来增加混淆   </li>
+<li>-flattenpackagehierarchy {package_name}    重新包装所有重命名的包并放在给定的单一包中   </li>
+<li>-repackageclass {package_name}    重新包装所有重命名的类文件中放在给定的单一包中   </li>
+<li>-dontusemixedcaseclassnames    混淆时不会产生形形色色的类名   </li>
+<li>-keepattributes {attribute_name,…}    保护给定的可选属性，例如LineNumberTable, LocalVariableTable, SourceFile, Deprecated, Synthetic, Signature, and   </li>
+<li></li>
+<li>InnerClasses.   </li>
+<li>-renamesourcefileattribute {string}    设置源文件中给定的字符串常量  </li>
+</ol>
+
+        
+        <br>
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+
+        <div id="lv-container">
+        </div>
+
+    </div>
 </div>
-<ul class="pager">
-    
-    
-</ul>
 
     </div>
 </div>
@@ -206,7 +241,7 @@
     // We expose some of the variables needed by the front end
     window.hexo_search_path = "search.json"
     window.hexo_root = "/"
-    window.isPost = false
+    window.isPost = true
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
